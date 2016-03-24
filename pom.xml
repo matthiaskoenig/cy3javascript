@@ -3,8 +3,8 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<properties>
-		<bundle.symbolicName>cy3sbml</bundle.symbolicName>
-		<bundle.namespace>org.cy3sbml</bundle.namespace>
+		<bundle.symbolicName>cyadd2nodes</bundle.symbolicName>
+		<bundle.namespace>org.cyadd2nodes</bundle.namespace>
 		
 		<maven-bundle-plugin.version>2.3.4</maven-bundle-plugin.version>
 		<osgi.api.version>4.2.0</osgi.api.version>
