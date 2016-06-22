@@ -10,6 +10,7 @@
 		<osgi.api.version>4.2.0</osgi.api.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<cytoscape.api.version>3.2.1</cytoscape.api.version>
+		<!--  exporting all extra packages, works fine for javafx, not for netscape.javascript -->
 		<org.osgi.framework.system.packages.extra>javafx.animation,javafx.application,javafx.collections,javafx.embed.swing,javafx.geometry,javafx.scene,javafx.scene.layout,javafx.scene.transform,javax.swing,javax.swing.border,javafx.fxml,netscape.javascript,org.osgi.framework</org.osgi.framework.system.packages.extra>
 	</properties>
 
@@ -175,70 +176,5 @@
 			<scope>provided</scope>
 		</dependency>
 		
-		<!-- 3rd party dependency -->		
-		<dependency>
-			<groupId>net.sf.ehcache</groupId>
-			<artifactId>ehcache</artifactId>
-			<version>2.10.0</version>
-		</dependency> 
-		<dependency>
-			<groupId>org.apache.commons</groupId>
-			<artifactId>commons-lang3</artifactId>
-			<version>3.4</version>
-		</dependency>
-		<dependency>
-			<groupId>commons-io</groupId>
-			<artifactId>commons-io</artifactId>
-			<version>2.4</version>
-		</dependency>
-		<dependency>
-			<groupId>org.slf4j</groupId>
-			<artifactId>slf4j-api</artifactId>
-			<version>1.7.12</version>
-		</dependency>
-		<dependency>
-			<groupId>org.slf4j</groupId>
-			<artifactId>slf4j-log4j12</artifactId>
-			<version>1.7.12</version>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.velocity</groupId>
-			<artifactId>velocity</artifactId>
-			<version>1.7</version>
-		</dependency>	
-		
-		<!-- Testing -->
-		<dependency>
-	    		<groupId>junit</groupId>
-	    		<artifactId>junit</artifactId>
-	    		<version>4.12</version>
-	    		<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.mockito</groupId>
-			<artifactId>mockito-all</artifactId>
-			<version>1.10.19</version>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.cytoscape</groupId>
-			<artifactId>event-api</artifactId>
-			<version>${cytoscape.api.version}</version>
-			<type>test-jar</type>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.cytoscape</groupId>
-			<artifactId>model-impl</artifactId>
-			<version>${cytoscape.api.version}</version>
-			<type>test-jar</type>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.cytoscape</groupId>
-			<artifactId>model-impl</artifactId>
-			<version>${cytoscape.api.version}</version>
-			<scope>test</scope>
-		</dependency>
 	</dependencies>
 </project>
