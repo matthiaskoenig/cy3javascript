@@ -11,7 +11,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<cytoscape.api.version>3.2.1</cytoscape.api.version>
 		<!--  exporting all extra packages, works fine for javafx, not for netscape.javascript -->
-		<org.osgi.framework.system.packages.extra>javafx.animation,javafx.application,javafx.collections,javafx.embed.swing,javafx.geometry,javafx.scene,javafx.scene.layout,javafx.scene.transform,javax.swing,javax.swing.border,javafx.fxml,netscape.javascript,org.osgi.framework</org.osgi.framework.system.packages.extra>
+		<org.osgi.framework.system.packages.extra>javafx.animation,javafx.application,javafx.collections,javafx.embed.swing,javafx.geometry,javafx.scene,javafx.scene.layout,javafx.scene.transform,javax.swing,javax.swing.border,javafx.fxml,org.osgi.framework</org.osgi.framework.system.packages.extra>
 	</properties>
 
 	<groupId>org.cysbml</groupId>
@@ -81,7 +81,8 @@
 						<Embed-Dependency>*;scope=!provided|test;groupId=!org.cytoscape</Embed-Dependency>
           				<Embed-Transitive>true</Embed-Transitive>
           				<!--  when adding the import there is a wiring exception -->
-          				<Import-Package>*</Import-Package>
+          				<Import-Package>*;resolution:=optional</Import-Package>
+                        <DynamicImport-Package>netscape.javascript</DynamicImport-Package>
 					</instructions>
 				</configuration>
 			</plugin>
