@@ -1,3 +1,3 @@
-# cyadd2nodes
+# cy3javascript
 
-Test bed for Cytoscape problems with OSGI.
+Testing `netscape.javascript` support in Cytoscape 3.

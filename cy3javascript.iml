@@ -2,14 +2,15 @@
 <module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule="true" type="JAVA_MODULE" version="4">
   <component name="FacetManager">
     <facet type="Osmorc" name="OSGi">
-      <configuration manifestGenerationMode="OsmorcControlled" manifestLocation="" jarfileLocation="cyadd2nodes-0.0.1.jar" outputPathType="CompilerOutputPath" bndFileLocation="" bundlorFileLocation="" bundleActivator="org.cyadd2nodes.CyActivator" bundleSymbolicName="cyadd2nodes" bundleVersion="0.0.1" ignoreFilePattern="" useProjectDefaultManifestFileLocation="true" alwaysRebuildBundleJAR="false" doNotSynchronizeWithMaven="false">
+      <configuration manifestGenerationMode="OsmorcControlled" manifestLocation="" jarfileLocation="cy3javascript-0.0.2.jar" outputPathType="CompilerOutputPath" bndFileLocation="" bundlorFileLocation="" bundleActivator="org.cyadd2nodes.CyActivator" bundleSymbolicName="cyadd2nodes" bundleVersion="0.0.2" ignoreFilePattern="" useProjectDefaultManifestFileLocation="true" alwaysRebuildBundleJAR="false" doNotSynchronizeWithMaven="false">
         <additionalProperties>
-          <property key="Export-Package" value="org.cyadd2nodes.*;version=&quot;0.0.1&quot;" />
+          <property key="Export-Package" value="org.cyadd2nodes.*;version=&quot;0.0.2&quot;" />
           <property key="Private-Package" value="org.cyadd2nodes.*" />
           <property key="Embed-Dependency" value="*;scope=!provided|test;groupId=!org.cytoscape" />
           <property key="Embed-Transitive" value="true" />
+          <property key="DynamicImport-Package" value="netscape.javascript" />
           <property key="Import-Package" value="*" />
-          <property key="Bundle-Name" value="cyadd2nodes" />
+          <property key="Bundle-Name" value="cy3javascript" />
         </additionalProperties>
         <additionalJARContents />
       </configuration>

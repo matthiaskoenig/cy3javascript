@@ -1,22 +1,19 @@
-package org.cyadd2nodes;
+package org.cy3javascript;
 
 import java.awt.Color;
 
 import javax.swing.JDialog;
 import javax.swing.SwingUtilities;
-
 import javafx.application.Platform;
 import javafx.embed.swing.JFXPanel;
 import javafx.scene.Scene;
-
 import javafx.scene.web.WebEngine;
 import javafx.scene.web.WebView;
 
-// !!! Impossible to access in OSGI !!!
+
 import netscape.javascript.JSObject;
 
 
-@SuppressWarnings("restriction")
 public class WebViewSwing {
 	
 	private static void initAndShowGUI() {

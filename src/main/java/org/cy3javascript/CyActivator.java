@@ -1,8 +1,7 @@
-package org.cyadd2nodes;
+package org.cy3javascript;
 
 import org.cytoscape.service.util.AbstractCyActivator;
 import org.osgi.framework.BundleContext;
-import org.cyadd2nodes.WebViewSwing;
 
 public class CyActivator extends AbstractCyActivator {
 	public CyActivator() {
