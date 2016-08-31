@@ -8,8 +8,10 @@
           <property key="Private-Package" value="org.cy3javascript.*" />
           <property key="Embed-Dependency" value="*;scope=!provided|test;groupId=!org.cytoscape" />
           <property key="Embed-Transitive" value="true" />
+          <property key="DynamicImport-Package" value="netscape.javascript" />
           <property key="Import-Package" value="*" />
           <property key="Bundle-Name" value="cy3javascript" />
+          <property key="Include-Resource" value="extension/org.cy3javascript.extension-0.0.1.jar=$MODULE_DIR$/src/main/resources/extension/org.cy3javascript.extension-0.0.1.jar" />
         </additionalProperties>
         <additionalJARContents />
       </configuration>
@@ -20,6 +22,7 @@
     <output-test url="file://$MODULE_DIR$/target/test-classes" />
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main/resources" type="java-resource" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
     <orderEntry type="inheritedJdk" />
